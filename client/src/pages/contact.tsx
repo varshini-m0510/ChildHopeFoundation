@@ -105,8 +105,8 @@ const Contact = () => {
       {/* Header */}
       <section className="py-20 bg-gradient-to-r from-trust-blue to-blue-700 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-5xl font-bold mb-6">Get in Touch</h1>
-          <p className="text-xl opacity-90">
+          <h1 className="text-5xl font-bold mb-6 text-pink-500">Get in Touch</h1>
+          <p className="text-xl opacity-90 text-pink-400">
             Have questions about our programs or want to get involved? We'd love to hear from you.
           </p>
         </div>
@@ -119,8 +119,8 @@ const Contact = () => {
             {/* Contact Information */}
             <div>
               <div className="mb-12">
-                <h2 className="text-3xl font-bold text-charcoal mb-6">Contact Information</h2>
-                <p className="text-xl text-gray-600">
+                <h2 className="text-3xl font-bold text-black mb-6">Contact Information</h2>
+                <p className="text-xl text-gray-800">
                   Reach out to us through any of the following channels. We're here to help!
                 </p>
               </div>
@@ -134,8 +134,8 @@ const Contact = () => {
                         <IconComponent className="h-6 w-6 text-white" />
                       </div>
                       <div>
-                        <h3 className="text-xl font-semibold text-charcoal mb-2">{method.title}</h3>
-                        <p className="text-gray-600 whitespace-pre-line leading-relaxed">
+                        <h3 className="text-xl font-semibold text-black mb-2">{method.title}</h3>
+                        <p className="text-gray-800 whitespace-pre-line leading-relaxed">
                           {method.content}
                         </p>
                       </div>
@@ -197,8 +197,8 @@ const Contact = () => {
                 <div className="w-16 h-16 bg-trust-blue rounded-full flex items-center justify-center mx-auto mb-4">
                   <MessageSquare className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-charcoal mb-4">Send Us a Message</h3>
-                <p className="text-gray-600">
+                <h3 className="text-xl font-bold text-black mb-4">Send Us a Message</h3>
+                <p className="text-gray-800">
                   Fill out the form below and we'll get back to you as soon as possible.
                 </p>
               </div>
@@ -352,14 +352,14 @@ const Contact = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-charcoal mb-6">Find Us</h2>
-            <p className="text-xl text-gray-600">
+            <h2 className="text-3xl font-bold text-black mb-6">Find Us</h2>
+            <p className="text-xl text-gray-800">
               Visit our office or attend one of our community programs to see our work in action.
             </p>
           </div>
 
           <div className="bg-gray-200 rounded-lg h-96 flex items-center justify-center">
-            <div className="text-center text-gray-500">
+            <div className="text-center text-gray-700">
               <MapPin className="h-16 w-16 mx-auto mb-4" />
               <h3 className="text-lg font-semibold mb-2">Interactive Map</h3>
               <p className="text-sm mb-4">
@@ -379,8 +379,8 @@ const Contact = () => {
       <section className="py-20 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-charcoal mb-6">Frequently Asked Questions</h2>
-            <p className="text-xl text-gray-600">
+            <h2 className="text-3xl font-bold text-black mb-6">Frequently Asked Questions</h2>
+            <p className="text-xl text-gray-800">
               Quick answers to common questions about our programs and how to get involved.
             </p>
           </div>
@@ -388,10 +388,10 @@ const Contact = () => {
           <div className="grid md:grid-cols-2 gap-8">
             <Card className="border-none shadow-lg">
               <CardContent className="p-6">
-                <h3 className="text-lg font-semibold text-charcoal mb-3">
+                <h3 className="text-lg font-semibold text-black mb-3">
                   How can I volunteer with Parikrama Foundation?
                 </h3>
-                <p className="text-gray-600 mb-4">
+                <p className="text-gray-800 mb-4">
                   Visit our volunteer page to see current opportunities and fill out an application. 
                   We offer both regular and one-time volunteer opportunities.
                 </p>
@@ -405,10 +405,10 @@ const Contact = () => {
 
             <Card className="border-none shadow-lg">
               <CardContent className="p-6">
-                <h3 className="text-lg font-semibold text-charcoal mb-3">
+                <h3 className="text-lg font-semibold text-black mb-3">
                   Are donations tax-deductible?
                 </h3>
-                <p className="text-gray-600 mb-4">
+                <p className="text-gray-800 mb-4">
                   Yes, we are registered under Section 80G, making all donations tax-deductible. 
                   You'll receive a digital receipt for tax purposes.
                 </p>
@@ -422,10 +422,10 @@ const Contact = () => {
 
             <Card className="border-none shadow-lg">
               <CardContent className="p-6">
-                <h3 className="text-lg font-semibold text-charcoal mb-3">
+                <h3 className="text-lg font-semibold text-black mb-3">
                   How can my company partner with you?
                 </h3>
-                <p className="text-gray-600 mb-4">
+                <p className="text-gray-800 mb-4">
                   We offer various corporate partnership models including CSR programs, 
                   employee volunteering, and skill-based partnerships.
                 </p>
@@ -439,10 +439,10 @@ const Contact = () => {
 
             <Card className="border-none shadow-lg">
               <CardContent className="p-6">
-                <h3 className="text-lg font-semibold text-charcoal mb-3">
+                <h3 className="text-lg font-semibold text-black mb-3">
                   Can I visit your programs in action?
                 </h3>
-                <p className="text-gray-600 mb-4">
+                <p className="text-gray-800 mb-4">
                   Absolutely! We welcome visitors to see our programs firsthand. 
                   Contact us to schedule a visit to our learning centers.
                 </p>
@@ -470,7 +470,7 @@ const Contact = () => {
               </Button>
             </Link>
             <Link href="/volunteer">
-              <Button variant="outline" className="border-white text-white hover:bg-white hover:text-trust-blue px-8 py-4 rounded-full font-semibold text-lg">
+              <Button variant="outline" className="border-hope-orange text-hope-orange hover:bg-hope-orange hover:text-white px-8 py-4 rounded-full font-semibold text-lg">
                 Start Volunteering
               </Button>
             </Link>

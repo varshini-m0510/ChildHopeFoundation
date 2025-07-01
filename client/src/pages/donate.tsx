@@ -6,15 +6,19 @@ import { Heart, Shield, Receipt, Users } from "lucide-react";
 const Donate = () => {
   const { data: programs } = useQuery({
     queryKey: ["/api/programs"],
+    retry: false,
+    refetchOnWindowFocus: false,
   });
+  const safePrograms = Array.isArray(programs) ? programs : [];
 
+  // Always show the donation form, even if there is an API error or no programs
   return (
     <div className="pt-16">
       {/* Header */}
       <section className="py-20 bg-gradient-to-r from-trust-blue to-blue-700 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-5xl font-bold mb-6">Make a Difference Today</h1>
-          <p className="text-xl opacity-90">
+          <h1 className="text-5xl font-bold mb-6 text-pink-500">Make a Difference Today</h1>
+          <p className="text-xl opacity-90 text-pink-400">
             Your contribution directly impacts a child's future. Every donation counts and brings us closer to our mission.
           </p>
         </div>
@@ -99,7 +103,7 @@ const Donate = () => {
       </section>
 
       {/* Programs You Can Support */}
-      {programs && programs.length > 0 && (
+      {safePrograms.length > 0 && (
         <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
@@ -110,7 +114,7 @@ const Donate = () => {
             </div>
 
             <div className="grid md:grid-cols-3 gap-8">
-              {programs.slice(0, 3).map((program: any) => (
+              {safePrograms.slice(0, 3).map((program: any) => (
                 <Card key={program.id} className="border-none shadow-lg card-hover">
                   <img 
                     src={program.imageUrl} 

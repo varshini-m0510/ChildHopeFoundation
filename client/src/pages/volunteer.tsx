@@ -109,8 +109,8 @@ const Volunteer = () => {
       {/* Header */}
       <section className="py-20 bg-gradient-to-r from-trust-blue to-blue-700 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-5xl font-bold mb-6">Volunteer With Us</h1>
-          <p className="text-xl opacity-90">
+          <h1 className="text-5xl font-bold mb-6 text-pink-500">Volunteer With Us</h1>
+          <p className="text-xl opacity-90 text-pink-400">
             Join our mission to transform lives. Share your skills, time, and passion to create lasting change in children's lives.
           </p>
         </div>
@@ -359,7 +359,7 @@ const Volunteer = () => {
               Apply to Volunteer
             </Button>
             <Link href="/contact">
-              <Button variant="outline" className="border-white text-white hover:bg-white hover:text-trust-blue px-8 py-4 rounded-full font-semibold text-lg">
+              <Button variant="outline" className="border-hope-orange text-hope-orange hover:bg-hope-orange hover:text-white px-8 py-4 rounded-full font-semibold text-lg">
                 Have Questions? Contact Us
               </Button>
             </Link>

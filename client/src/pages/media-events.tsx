@@ -119,9 +119,9 @@ const MediaEvents = () => {
           <Calendar className="h-4 w-4 mr-2" />
           {formatDate(event.eventDate)}
         </div>
-        <h3 className="text-xl font-bold text-charcoal mb-3">{event.title}</h3>
-        <p className="text-gray-600 mb-4">{event.description}</p>
-        <div className="flex items-center text-gray-500 text-sm mb-4">
+        <h3 className="text-xl font-bold text-black mb-3">{event.title}</h3>
+        <p className="text-gray-800 mb-4">{event.description}</p>
+        <div className="flex items-center text-gray-700 text-sm mb-4">
           <MapPin className="h-4 w-4 mr-2" />
           {event.location}
         </div>
@@ -143,8 +143,8 @@ const MediaEvents = () => {
       {/* Header */}
       <section className="py-20 bg-gradient-to-r from-trust-blue to-blue-700 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-5xl font-bold mb-6">Media & Events</h1>
-          <p className="text-xl opacity-90">
+          <h1 className="text-5xl font-bold mb-6 text-pink-500">Media & Events</h1>
+          <p className="text-xl opacity-90 text-pink-400">
             Stay updated with our latest activities, events, and impact stories through our media gallery and news coverage.
           </p>
         </div>
@@ -164,8 +164,8 @@ const MediaEvents = () => {
             {/* Upcoming Events */}
             <TabsContent value="upcoming">
               <div className="mb-8">
-                <h2 className="text-3xl font-bold text-charcoal text-center mb-6">Upcoming Events</h2>
-                <p className="text-xl text-gray-600 text-center max-w-3xl mx-auto mb-12">
+                <h2 className="text-3xl font-bold text-black text-center mb-6">Upcoming Events</h2>
+                <p className="text-xl text-gray-800 text-center max-w-3xl mx-auto mb-12">
                   Join us at our upcoming events and be part of our mission to create positive change.
                 </p>
               </div>
@@ -193,8 +193,8 @@ const MediaEvents = () => {
                   <div className="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-6 flex items-center justify-center">
                     <Calendar className="h-12 w-12 text-gray-400" />
                   </div>
-                  <h3 className="text-2xl font-bold text-charcoal mb-4">No Upcoming Events</h3>
-                  <p className="text-gray-600 mb-6">
+                  <h3 className="text-2xl font-bold text-black mb-4">No Upcoming Events</h3>
+                  <p className="text-gray-800 mb-6">
                     We're planning exciting events for the future. Check back soon for updates!
                   </p>
                   <Link href="/contact">
@@ -209,8 +209,8 @@ const MediaEvents = () => {
             {/* Photo Gallery */}
             <TabsContent value="gallery">
               <div className="mb-8">
-                <h2 className="text-3xl font-bold text-charcoal text-center mb-6">Photo Gallery</h2>
-                <p className="text-xl text-gray-600 text-center max-w-3xl mx-auto mb-12">
+                <h2 className="text-3xl font-bold text-black text-center mb-6">Photo Gallery</h2>
+                <p className="text-xl text-gray-800 text-center max-w-3xl mx-auto mb-12">
                   Capturing moments of joy, learning, and transformation from our programs and events.
                 </p>
               </div>
@@ -272,8 +272,8 @@ const MediaEvents = () => {
             {/* Press Coverage */}
             <TabsContent value="press">
               <div className="mb-8">
-                <h2 className="text-3xl font-bold text-charcoal text-center mb-6">Press Coverage</h2>
-                <p className="text-xl text-gray-600 text-center max-w-3xl mx-auto mb-12">
+                <h2 className="text-3xl font-bold text-black text-center mb-6">Press Coverage</h2>
+                <p className="text-xl text-gray-800 text-center max-w-3xl mx-auto mb-12">
                   Our work and impact as featured in leading media outlets across India.
                 </p>
               </div>
@@ -287,10 +287,10 @@ const MediaEvents = () => {
                           <span className="text-2xl">{article.logo}</span>
                         </div>
                         <div className="flex-grow">
-                          <h3 className="text-xl font-bold text-charcoal mb-2">{article.title}</h3>
-                          <p className="text-gray-600 mb-3">{article.description}</p>
+                          <h3 className="text-xl font-bold text-black mb-2">{article.title}</h3>
+                          <p className="text-gray-800 mb-3">{article.description}</p>
                           <div className="flex items-center justify-between">
-                            <div className="flex items-center text-sm text-gray-500">
+                            <div className="flex items-center text-sm text-gray-700">
                               <span className="font-medium">{article.source}</span>
                               <span className="mx-2">•</span>
                               <span>{article.date}</span>
@@ -318,8 +318,8 @@ const MediaEvents = () => {
             {/* Past Events */}
             <TabsContent value="past">
               <div className="mb-8">
-                <h2 className="text-3xl font-bold text-charcoal text-center mb-6">Past Events</h2>
-                <p className="text-xl text-gray-600 text-center max-w-3xl mx-auto mb-12">
+                <h2 className="text-3xl font-bold text-black text-center mb-6">Past Events</h2>
+                <p className="text-xl text-gray-800 text-center max-w-3xl mx-auto mb-12">
                   Look back at our successful events and the impact they created in our communities.
                 </p>
               </div>
@@ -347,8 +347,8 @@ const MediaEvents = () => {
                   <div className="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-6 flex items-center justify-center">
                     <Calendar className="h-12 w-12 text-gray-400" />
                   </div>
-                  <h3 className="text-2xl font-bold text-charcoal mb-4">No Past Events</h3>
-                  <p className="text-gray-600">
+                  <h3 className="text-2xl font-bold text-black mb-4">No Past Events</h3>
+                  <p className="text-gray-800">
                     Our event history will be displayed here as we continue our mission.
                   </p>
                 </div>
@@ -361,8 +361,8 @@ const MediaEvents = () => {
       {/* Call to Action */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold text-charcoal mb-6">Get Involved in Our Events</h2>
-          <p className="text-xl text-gray-600 mb-8">
+          <h2 className="text-3xl font-bold text-black mb-6">Get Involved in Our Events</h2>
+          <p className="text-xl text-gray-800 mb-8">
             Join us at our next event or help us organize community activities that create lasting impact.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

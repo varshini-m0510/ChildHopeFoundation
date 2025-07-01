@@ -217,7 +217,7 @@ const Collaborations = () => {
       <section className="py-20 bg-gradient-to-r from-trust-blue to-blue-700 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl font-bold mb-6">Corporate Partnerships</h1>
-          <p className="text-xl opacity-90">
+          <p className="text-xl opacity-90 text-white">
             Partner with us for CSR initiatives, employee engagement programs, and collaborative social impact projects that create lasting change.
           </p>
         </div>
@@ -227,8 +227,8 @@ const Collaborations = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-charcoal mb-6">Why Partner with Parikrama?</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <h2 className="text-4xl font-bold text-black mb-6">Why Partner with Parikrama?</h2>
+            <p className="text-xl text-gray-800 max-w-3xl mx-auto">
               Create meaningful impact while achieving your CSR goals through our proven partnership model.
             </p>
           </div>
@@ -239,8 +239,8 @@ const Collaborations = () => {
                 <div className="w-16 h-16 bg-trust-blue rounded-full flex items-center justify-center mx-auto mb-6">
                   <CheckCircle className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-charcoal mb-4">Proven Impact</h3>
-                <p className="text-gray-600">8 years of successful program delivery with measurable outcomes and transparent reporting.</p>
+                <h3 className="text-xl font-bold text-black mb-4">Proven Impact</h3>
+                <p className="text-gray-800">8 years of successful program delivery with measurable outcomes and transparent reporting.</p>
               </CardContent>
             </Card>
 
@@ -249,8 +249,8 @@ const Collaborations = () => {
                 <div className="w-16 h-16 bg-success-green rounded-full flex items-center justify-center mx-auto mb-6">
                   <PieChart className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-charcoal mb-4">Custom Solutions</h3>
-                <p className="text-gray-600">Tailored partnerships that align with your company values and CSR objectives.</p>
+                <h3 className="text-xl font-bold text-black mb-4">Custom Solutions</h3>
+                <p className="text-gray-800">Tailored partnerships that align with your company values and CSR objectives.</p>
               </CardContent>
             </Card>
 
@@ -259,8 +259,8 @@ const Collaborations = () => {
                 <div className="w-16 h-16 bg-hope-orange rounded-full flex items-center justify-center mx-auto mb-6">
                   <Award className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-charcoal mb-4">Recognition</h3>
-                <p className="text-gray-600">Enhanced brand reputation and stakeholder recognition for your social impact initiatives.</p>
+                <h3 className="text-xl font-bold text-black mb-4">Recognition</h3>
+                <p className="text-gray-800">Enhanced brand reputation and stakeholder recognition for your social impact initiatives.</p>
               </CardContent>
             </Card>
 
@@ -269,8 +269,8 @@ const Collaborations = () => {
                 <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
                   <Building className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-charcoal mb-4">Compliance</h3>
-                <p className="text-gray-600">Meet CSR mandates with proper documentation and 80G tax exemption benefits.</p>
+                <h3 className="text-xl font-bold text-black mb-4">Compliance</h3>
+                <p className="text-gray-800">Meet CSR mandates with proper documentation and 80G tax exemption benefits.</p>
               </CardContent>
             </Card>
           </div>
@@ -281,8 +281,8 @@ const Collaborations = () => {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-charcoal mb-6">Partnership Models</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <h2 className="text-4xl font-bold text-black mb-6">Partnership Models</h2>
+            <p className="text-xl text-gray-800 max-w-3xl mx-auto">
               Choose from our flexible partnership models designed to maximize impact and employee engagement.
             </p>
           </div>
@@ -298,7 +298,7 @@ const Collaborations = () => {
                         <IconComponent className="h-6 w-6 text-white" />
                       </div>
                       <div>
-                        <h3 className="text-xl font-bold text-charcoal">{type.title}</h3>
+                        <h3 className="text-xl font-bold text-black">{type.title}</h3>
                         <div className="flex gap-2 mt-2">
                           <Badge variant="secondary" className="text-xs">{type.commitment}</Badge>
                           <Badge variant="outline" className="text-xs">{type.investment}</Badge>
@@ -306,14 +306,14 @@ const Collaborations = () => {
                       </div>
                     </div>
 
-                    <p className="text-gray-600 mb-6 flex-grow">{type.description}</p>
+                    <p className="text-gray-800 mb-6 flex-grow">{type.description}</p>
 
                     <div className="grid md:grid-cols-2 gap-6">
                       <div>
-                        <h4 className="font-semibold text-charcoal mb-3">What We Provide:</h4>
+                        <h4 className="font-semibold text-black mb-3">What We Provide:</h4>
                         <ul className="space-y-2">
                           {type.features.map((feature, featureIndex) => (
-                            <li key={featureIndex} className="text-sm text-gray-600 flex items-start">
+                            <li key={featureIndex} className="text-sm text-gray-800 flex items-start">
                               <span className="text-trust-blue mr-2 mt-1 flex-shrink-0">•</span>
                               {feature}
                             </li>
@@ -322,7 +322,7 @@ const Collaborations = () => {
                       </div>
 
                       <div>
-                        <h4 className="font-semibold text-charcoal mb-3">Your Benefits:</h4>
+                        <h4 className="font-semibold text-black mb-3">Your Benefits:</h4>
                         <ul className="space-y-2">
                           {type.benefits.map((benefit, benefitIndex) => (
                             <li key={benefitIndex} className="text-sm text-success-green flex items-start">
@@ -350,8 +350,8 @@ const Collaborations = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-charcoal mb-6">Success Stories</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <h2 className="text-4xl font-bold text-black mb-6">Success Stories</h2>
+            <p className="text-xl text-gray-800 max-w-3xl mx-auto">
               See how our corporate partners have achieved their CSR goals while creating meaningful impact.
             </p>
           </div>
@@ -362,26 +362,26 @@ const Collaborations = () => {
                 <CardContent className="p-8">
                   <div className="grid lg:grid-cols-3 gap-8">
                     <div>
-                      <h3 className="text-2xl font-bold text-charcoal mb-4">{study.company}</h3>
+                      <h3 className="text-2xl font-bold text-black mb-4">{study.company}</h3>
                       <div className="space-y-4">
                         <div>
                           <h4 className="font-semibold text-trust-blue mb-2">Challenge:</h4>
-                          <p className="text-gray-600 text-sm">{study.challenge}</p>
+                          <p className="text-gray-800 text-sm">{study.challenge}</p>
                         </div>
                         <div>
                           <h4 className="font-semibold text-success-green mb-2">Solution:</h4>
-                          <p className="text-gray-600 text-sm">{study.solution}</p>
+                          <p className="text-gray-800 text-sm">{study.solution}</p>
                         </div>
                       </div>
                     </div>
 
                     <div>
-                      <h4 className="font-semibold text-charcoal mb-4">Results Achieved:</h4>
+                      <h4 className="font-semibold text-black mb-4">Results Achieved:</h4>
                       <ul className="space-y-3">
                         {study.results.map((result, resultIndex) => (
                           <li key={resultIndex} className="flex items-start">
                             <Star className="h-4 w-4 text-hope-orange mr-2 mt-1 flex-shrink-0" />
-                            <span className="text-gray-600 text-sm">{result}</span>
+                            <span className="text-gray-800 text-sm">{result}</span>
                           </li>
                         ))}
                       </ul>
@@ -390,8 +390,8 @@ const Collaborations = () => {
                     <div>
                       <div className="bg-blue-50 p-6 rounded-lg">
                         <h4 className="font-semibold text-trust-blue mb-4">Client Testimonial:</h4>
-                        <p className="text-gray-700 italic text-sm mb-4">"{study.testimonial}"</p>
-                        <p className="text-xs text-gray-600">- {study.executive}</p>
+                        <p className="text-gray-900 italic text-sm mb-4">"{study.testimonial}"</p>
+                        <p className="text-xs text-gray-800">- {study.executive}</p>
                       </div>
                     </div>
                   </div>
@@ -406,8 +406,8 @@ const Collaborations = () => {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-charcoal mb-6">Our Corporate Partners</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <h2 className="text-4xl font-bold text-black mb-6">Our Corporate Partners</h2>
+            <p className="text-xl text-gray-800 max-w-3xl mx-auto">
               Join these forward-thinking companies in creating positive social impact.
             </p>
           </div>
@@ -417,11 +417,11 @@ const Collaborations = () => {
               <Card key={index} className="border-none shadow-lg text-center card-hover">
                 <CardContent className="p-6">
                   <div className="text-4xl mb-4">{partner.logo}</div>
-                  <h3 className="text-lg font-bold text-charcoal mb-2">{partner.name}</h3>
+                  <h3 className="text-lg font-bold text-black mb-2">{partner.name}</h3>
                   <Badge variant="secondary" className="mb-4 text-xs">
                     {partner.partnership}
                   </Badge>
-                  <p className="text-sm text-gray-600 mb-3">{partner.impact}</p>
+                  <p className="text-sm text-gray-800 mb-3">{partner.impact}</p>
                   <div className="text-xs text-trust-blue font-medium">
                     Partnership: {partner.duration}
                   </div>
@@ -436,8 +436,8 @@ const Collaborations = () => {
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-charcoal mb-6">Start Your Partnership Journey</h2>
-            <p className="text-xl text-gray-600">
+            <h2 className="text-4xl font-bold text-black mb-6">Start Your Partnership Journey</h2>
+            <p className="text-xl text-gray-800">
               Ready to create meaningful impact? Share your partnership goals with us.
             </p>
           </div>
@@ -453,7 +453,7 @@ const Collaborations = () => {
                 <div className="w-16 h-16 bg-success-green rounded-full flex items-center justify-center mx-auto mb-4">
                   <Handshake className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-charcoal mb-4">Partnership Inquiry</h3>
+                <h3 className="text-2xl font-bold text-black mb-4">Partnership Inquiry</h3>
                 <p className="text-gray-600">
                   Let's discuss how we can work together to create lasting social impact.
                 </p>

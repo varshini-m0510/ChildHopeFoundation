@@ -170,9 +170,9 @@ const Internships = () => {
       {/* Header */}
       <section className="py-20 bg-gradient-to-r from-trust-blue to-blue-700 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-5xl font-bold mb-6">Internship Programs</h1>
-          <p className="text-xl opacity-90">
-            Gain hands-on experience in social work, education, and non-profit management while making a real difference in children's lives.
+          <h1 className="text-5xl font-bold mb-6 text-pink-500">Volunteer With Us</h1>
+          <p className="text-xl opacity-90 text-pink-400">
+            Join our mission to transform lives. Share your skills, time, and passion to create lasting change in children's lives.
           </p>
         </div>
       </section>

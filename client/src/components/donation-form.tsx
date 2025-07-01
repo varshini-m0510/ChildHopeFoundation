@@ -171,14 +171,14 @@ const DonationForm = () => {
             render={({ field }) => (
               <FormItem>
                 <FormLabel>Support a specific program (optional)</FormLabel>
-                <Select onValueChange={(value) => field.onChange(value ? parseInt(value) : null)}>
+                <Select onValueChange={(value) => field.onChange(value ? parseInt(value) : null)} defaultValue={field.value ? String(field.value) : undefined}>
                   <FormControl>
                     <SelectTrigger>
                       <SelectValue placeholder="General Fund - Where it's needed most" />
                     </SelectTrigger>
                   </FormControl>
                   <SelectContent>
-                    <SelectItem value="">General Fund - Where it's needed most</SelectItem>
+                    <SelectItem value="general">General Fund - Where it's needed most</SelectItem>
                     <SelectItem value="1">Education Program</SelectItem>
                     <SelectItem value="2">Healthcare Access</SelectItem>
                     <SelectItem value="3">Nutrition Support</SelectItem>

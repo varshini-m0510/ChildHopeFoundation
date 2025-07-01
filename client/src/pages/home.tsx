@@ -32,10 +32,9 @@ const Home = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-charcoal mb-6">About Parikrama Foundation</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Founded with a vision to break the cycle of poverty through education and community empowerment, 
-              Parikrama Foundation has been transforming lives across India since 2016.
+            <h2 className="text-4xl font-bold text-black mb-6">About Parikrama Foundation</h2>
+            <p className="text-xl text-black max-w-3xl mx-auto leading-relaxed">
+              Empowering underprivileged children through education, healthcare, and community support since 2016.
             </p>
           </div>
 
@@ -44,8 +43,8 @@ const Home = () => {
               <div className="w-16 h-16 bg-trust-blue rounded-full flex items-center justify-center mb-6">
                 <span className="text-white text-2xl">🎯</span>
               </div>
-              <h3 className="text-2xl font-bold text-charcoal mb-4">Our Mission</h3>
-              <p className="text-gray-600 leading-relaxed">
+              <h3 className="text-2xl font-bold text-black mb-4">Our Mission</h3>
+              <p className="text-black leading-relaxed">
                 To provide quality education, healthcare, and life skills to underprivileged children, 
                 empowering them to become self-reliant and contributing members of society.
               </p>
@@ -55,8 +54,8 @@ const Home = () => {
               <div className="w-16 h-16 bg-hope-orange rounded-full flex items-center justify-center mb-6">
                 <span className="text-white text-2xl">👁️</span>
               </div>
-              <h3 className="text-2xl font-bold text-charcoal mb-4">Our Vision</h3>
-              <p className="text-gray-600 leading-relaxed">
+              <h3 className="text-2xl font-bold text-black mb-4">Our Vision</h3>
+              <p className="text-black leading-relaxed">
                 A world where every child, regardless of their background, has access to quality education 
                 and the opportunity to reach their full potential.
               </p>
@@ -98,7 +97,7 @@ const Home = () => {
             </div>
           ) : (
             <div className="grid lg:grid-cols-3 gap-8 mb-12">
-              {programs?.slice(0, 3).map((program: any) => (
+              {(Array.isArray(programs) ? programs.slice(0, 3) : []).map((program: any) => (
                 <ProgramCard key={program.id} program={program} />
               ))}
             </div>
@@ -163,7 +162,7 @@ const Home = () => {
               </Button>
             </Link>
             <Link href="/volunteer">
-              <Button variant="outline" className="border-white text-white hover:bg-white hover:text-trust-blue px-8 py-4 rounded-full font-semibold text-lg">
+              <Button variant="outline" className="border-hope-orange text-hope-orange hover:bg-hope-orange hover:text-white px-8 py-4 rounded-full font-semibold text-lg">
                 Become a Volunteer
               </Button>
             </Link>
